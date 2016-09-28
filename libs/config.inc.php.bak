@@ -1,0 +1,48 @@
+<?php
+header("Cache-Control:no-cache,must-revalidate"); 
+header('Content-Type: text/html; charset=gb2312');
+
+
+
+session_start();
+require('function.inc.php');
+error_reporting(0);
+
+//连接Mysql数据库
+$conn=mysql_connect('127.0.0.1','inno','hrh_theinno_org!theinno') or die('数据库连接失败！');
+mysql_select_db('database_theinno_org',$conn) or die('数据表链接失败！');
+mysql_query("set names gbk");
+
+	
+
+//$_SESSION['username']=urldecode($_SESSION['username']);
+
+if($_SESSION['userid'] and $_SESSION['username'])
+{
+	$userid = $_SESSION['userid'];
+	$username = $_SESSION['username'];
+	$flag = $_SESSION['flag'];
+	$kind = $_SESSION['kind'];
+	$pinpaicode = $_SESSION['pinpaicode'];
+	$gongchangcode = $_SESSION['gongchangcode'];
+	$pinpainame = $_SESSION['pinpainame'];
+	$gongchangname = $_SESSION['gongchangname'];
+}
+
+
+//全部提交的内容都转码
+$_GET = saddslashes($_GET);
+$_POST = saddslashes($_POST);
+
+$tip='找不到相关数据';		//找不到数据的显示内容
+
+function __Autoload($classname)
+{
+	try{
+		$includepath = $_SERVER["DOCUMENT_ROOT"]."/Class/{$classname}.php";
+		require_once $includepath;
+	}catch(Exception $e){
+		exit($e->getMessage());
+	}
+}
+?>

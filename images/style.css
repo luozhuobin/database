@@ -1,0 +1,41 @@
+body{ padding:0; margin:0; background:#ffffff; font-size:12px; color:#474747;}
+img{ border:none;}
+table{font-size:12px;}
+a{ text-decoration:none; color:#474747;}
+a:hover{ text-decoration: underline; color:#F28202;}
+
+.font01{ color:#6a3a07;}
+.font02{ color:#bdbdbd;}
+.font03{ font-family:Arial;}
+
+.input01{ border:1px #aba9aa solid; width:123px; background:#ffffff;}
+.input02{border:1px #aba9aa solid;width:70px; background:#ffffff;}
+.input03{border:1px #aba9aa solid;width:350px; background:#ffffff; color:#cccccc;}
+.input04{border:1px #aba9aa solid;width:130px; background:#ffffff;}
+.input05{border:1px #aba9aa solid;width:420px; background:#ffffff;}
+.inBg2{ height:19px; border:1px solid #7F9DB9;}
+.inBg3{ width:68px; height:19px; border-style:none; background:url(bg2.gif) no-repeat; color:#DF4900;}
+
+/* index */
+.nav01,.nav01 a{ color:#FFFFFF; font-weight:bold}
+.nav02,.nav02 a{ color:#FFFFFF; font-weight:bold}
+.nav02 a:hover{ color:#BAD816;}
+.nav02{ background:url(line01.jpg) no-repeat right;}
+.leftnav{ background:url(leftbottom.jpg) no-repeat bottom left; padding-bottom:137px; width:201px;}
+.title01{ margin-top:4px;font-size:14px; font-weight:bold;}
+.title02{ margin-top:4px;font-size:14px; font-weight:bold; color:#f08200;}
+.leftsub td{ border-bottom:1px dotted #cccccc; }
+.leftsub,.leftsub a{ color:#5f5f5f;}
+.footer{ border-bottom:3px solid #f08200; color:#5a5a5a;}
+.rightcon{ border-left:1px #decfbf solid;border-right:1px #decfbf solid;}
+.datatable{ border-collapse: collapse; border:#dedfe0 solid 1px;}
+.datatable strong{ color:#f08200; background:url(line02.jpg) no-repeat left; padding:0 10px;}
+.datatable .graybg{ background:#fafafa;border:#dedfe0 solid 1px;}
+.datatable .graybg1{ background:url(line04.jpg) repeat-x left top;}
+.pages td{ background:url(btnbg.jpg) no-repeat;}
+.pages td a{ color:#474747;}
+.b{ font-weight:bold;}
+.b1{ font-weight:bold;}
+.datatable02{ border:#dedfe0 solid 1px; border-top:3px solid #f08200;}
+.datatable03{border-top:3px solid #f08200;}
+.datatable04{border-top:1px dotted #f08200;}

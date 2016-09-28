@@ -1,0 +1,37 @@
+<style type="text/css">
+.logWrap{ width:450px; margin:0 auto; padding:5px; background:#fff;}
+.logCon{ background-color:#EEF8F9; border:#BBDDE5 1px solid; width:448px;}
+.logTitle{ background:url(../images/logTitle.gif) no-repeat; height:40px;}
+.logTitle h2{ text-align:right; line-height:39px; width:180px; font-size:14px; color:#fff; }
+.logCon .close{ width21px; height:21px; float:right; margin:9px 12px 0 0;}
+.logCon .logItem{ padding:20px 0 20px 35px;}
+.windowLogin .regItem{ height:40px; margin:10px 0; overflow:hidden; line-height:40px;}
+.windowLogin .regItem label{ color:#646464; display:block; float:left; font-size:14px; text-align:right; height:40px; font-size:14px;}
+.windowLogin .regItem span{ color:#969696;}
+.windowLogin .regItem span a{ color:red; margin-right:3px;}
+.windowLogin .regItem input{ font-size:14px; background:#fff; border:#d2d2d2 1px solid; color:#333; float:left; margin-top:4px; margin-right:3px; width:180px; padding:6px 3px; vertical-align:middle;}
+.windowLogin .regItem select{ padding:3px;}
+.logItem .check{ margin-left:60px; font-size:14px;}
+.logItem .reg_btn{ margin-top:10px; margin-left:110px;}
+</style>
+<div id="saveDiv" style="display:none;position: absolute; left: 508px; top: 126px; z-index: 10;" class="logWrap">
+	<div class="logCon">         
+    	<div class="logItem">
+            <form id="save_user">
+                	<div class="windowLogin">
+                        <div style="height:100px;" class="regItem">
+                            <label for="exist_name">请输入原因：</label>
+                             <textarea id="remark" name="remark" rows="5" cols="40"></textarea>
+                        </div>   
+                        <div style="display:none;color:#f00;" id="result_info">
+                        </div>                     
+                     </div>                      
+                    <div class="reg_btn">					
+                        <input width="109" type="button" height="26" value="确定" style="" id="submitBut" onclick="">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input width="109" type="button" height="26" value="取消" id="cancleBut">
+                    </div>     
+            </form>
+      	</div>
+    </div>   
+</div>
